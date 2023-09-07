@@ -1,0 +1,145 @@
+/* Start */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* size *********** */
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End  */
+
+
+/* stRT */
+
+.container-blogs {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(0deg, #397ef6 10px, transparent 10px);
+  background-repeat: no-repeat;
+  background-position: 0 0.62em;
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.15);
+  border-radius: 0.3em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container-blogs h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.75em;
+  margin: 0.6em 0;
+  font-weight: 600;
+  color: #5d5d5d;
+}
+
+.col {
+  padding: 1em;
+}
+
+.cards {
+  background-color: #EEEEEE;
+  padding: 3.1em 1.25em;
+  text-align: center;
+
+}
+
+.cards button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+
+.cards .imge {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  overflow-x: ;
+  overflow-y: ;
+  font-size: 2.5em;
+  height: 40%;
+  width: 80%;
+  vertical-align: middle;
+  margin: auto;
+  display: grid;
+  color: #ffffff;
+}
+
+.imge:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+
+
+  transition: 0.5s;
+}
+.cards h3 {
+  font-size: 1.3em;
+  margin: 1em 0 1.4em 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #070024;
+}
+.cards p {
+  line-height: 2em;
+  color: #625a71;
+}
+.cards:hover {
+  background-position: 0;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .cards {
+    padding: 5em 2em;
+  }
+  .col {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
